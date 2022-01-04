@@ -3,7 +3,7 @@ FROM frolvlad/alpine-java:jdk8-slim
 RUN apk --update add wget tar bash
 
 RUN wget https://archive.apache.org/dist/spark/spark-2.4.4/spark-2.4.4-bin-without-hadoop.tgz
-RUN wget http://apache.mirror.anlx.net/hadoop/common/hadoop-2.8.5/hadoop-2.8.5.tar.gz
+RUN wget https://archive.apache.org/dist/hadoop/common/hadoop-2.8.5/hadoop-2.8.5.tar.gz
 
 RUN tar -xzf spark-2.4.4-bin-without-hadoop.tgz && mv spark-2.4.4-bin-without-hadoop /usr/local && rm spark-2.4.4-bin-without-hadoop.tgz
 RUN tar -xzf hadoop-2.8.5.tar.gz && mv hadoop-2.8.5 /usr/local
