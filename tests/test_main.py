@@ -6,7 +6,7 @@ from spark.main import run
 S3 = 'http://aws-docker:4572'
 
 
-class StorageFunctionsTest(TestCase):
+class UploaderIntegrationTest(TestCase):
 
     def setUp(self) -> None:
         self.spark = SparkSession \
